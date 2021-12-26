@@ -7,17 +7,17 @@
     <link rel="stylesheet" href={{ asset('/css/app.css') }}>
     <title>Edit list</title>
 </head>
-<body class="bg-secondary">
+<body class="bg-hite">
     <div class="container">
        <div class="row justify-content-center">
            <div class="col-md-5">
-            <header class="bg-primary p-2 rounded my-2">
-                <h1 class="text-white text-center">Edit list</h1>
+            <header class="bg-white p-2 rounded my-2 shadow-sm">
+                <h1 class="text-primary text-center">Edit list</h1>
                 <form action="/update/{{$task['id']}}" method="POST" class="d-flex">
                     @csrf
                     @method('put')
                     <input class="form-control me-2" type="text" name="edit" value="{{$task['list']}}">
-                    <button class="btn btn-secondary text-primary fw-bold" type="submit">Edit</button>
+                    <button class="btn btn-primary text-white fw-bold" type="submit">Edit</button>
                 </form>
             </header>
             @error('edit')

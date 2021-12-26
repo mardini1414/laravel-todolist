@@ -1,0 +1,9 @@
+// color
+$primary : #e53935;
+$success : #81c784;
+$danger : #ef5350;
+
+// input
+.btn:focus, .form-control:focus {
+    box-shadow: none !important;
+}
